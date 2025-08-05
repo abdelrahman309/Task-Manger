@@ -131,7 +131,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 **Abdelrahman Steit**
 - GitHub: [@abdelrahman309](https://github.com/abdelrahman309)
-- Project Link: [https://github.com/abdelrahman309/task-manager](https://github.com/abdelrahman309/task-manager)
+- Project Link: [https://github.com/abdelrahman309/Task-Manger]
 
 ## 🔮 Future Enhancements
 
