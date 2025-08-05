@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #060826;
+  color: white;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left {
+  display: flex;
+  animation-name: left;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.right {
+  flex: 1;
+  transition: 1s;
+  background-color: #d93280;
+  background-image: url("https://images.unsplash.com/photo-1563089145-599997674d42?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header h2 {
+  margin: 0;
+}
+
+header h4 {
+  color: #fff;
+  opacity: 0.4;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form p {
+  text-align: right;
+}
+form p a {
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+.input-field {
+  height: 46px;
+  padding: 0 1rem;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  margin-top: 1.25rem;
+  transition: 0.2s;
+  font-family: "Rubik", sans-serif;
+}
+
+.input-field:focus {
+  border-color: #d93280;
+}
+
+form button {
+  padding: 0.75rem 0.625rem;
+  border: 0;
+  background: linear-gradient(to right, #d93280 0%, #44118c 100%);
+  border-radius: 0.25rem;
+  margin-top: 0.625;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+}
+
+.animation {
+  animation-name: move;
+  animation-duration: 0.4s;
+  animation-fill-mode: both;
+  animation-delay: 2s;
+}
+
+.a1 {
+  animation-delay: 2s;
+}
+
+.a2 {
+  animation-delay: 2.2;
+}
+
+.a3 {
+  animation-delay: 2.4s;
+}
+
+.a4 {
+  animation-delay: 2.6s;
+}
+
+.a5 {
+  animation-delay: 2.8s;
+}
+
+.a6 {
+  animation-delay: 3s;
+}
+
+@keyframes move {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+@keyframes left {
+  0% {
+    opacity: 0;
+    width: 0%;
+  }
+  100% {
+    opacity: 1;
+    width: 440px;
+    padding: 3rem;
+  }
+}
+button.a6 a {
+  text-decoration: none;
+}
