@@ -11,7 +11,7 @@ loginButton.addEventListener("click", function (e) {
   if (valueOfUser === "" || valueOfPass === "") {
     alert("Please fill in all fields");
   } else if (valueOfUser === "user" && valueOfPass === "1234") {
-    window.location.href = "index.html";
+    window.location.href = "index-task.html";
   } else {
     console.log(valueOfPass);
   }
